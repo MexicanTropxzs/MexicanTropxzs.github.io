@@ -1,114 +1,116 @@
-@font-face {
-    font-family: 'Minecraft';
-    src: url('Minecraft.ttf') format('woff2'),
-         url('Minecraft.ttf') format('woff');
-}
-
 body {
-    margin: 0;
-    font-family: 'Minecraft', sans-serif;
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
-    background-size: 400% 400%;
-    animation: gradientShift 15s ease infinite;
-    color: white;
-}
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            color: white;
+        }
 
-@keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
 
-.heading {
-    font-size: 2.5rem;
-    color: #ffdd57;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
-    text-align: center;
-    margin: 20px 0;
-}
+        .heading {
+            font-size: 2.5rem;
+            color: #ffdd57;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+            text-align: center;
+            margin: 20px 0;
+        }
 
-.grid-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 15px;
-    padding: 20px;
-}
+        .grid-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 15px;
+            padding: 20px;
+        }
 
-.video-box iframe {
-    width: 100%;
-    height: 340px; /* taller so full player fits */
-    border: none;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-    overflow: hidden;
-}
+        .video-box iframe {
+            width: 100%;
+            height: 340px;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+            overflow: hidden;
+        }
 
+        .text-box {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
 
-.text-box {
-    background: rgba(255, 255, 255, 0.08);
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-}
+        .text-box a {
+            color: #4b85a0;
+            text-decoration: none;
+            border-bottom: 2px solid #4b85a0;
+            transition: 0.3s;
+        }
 
-.text-box a {
-    color: #4b85a0;
-    text-decoration: none;
-    border-bottom: 2px solid #4b85a0;
-    transition: 0.3s;
-}
-.text-box a:hover {
-    color: #bbf2f4;
-    border-color: #bbf2f4;
-}
+        .text-box a:hover {
+            color: #bbf2f4;
+            border-color: #bbf2f4;
+        }
 
-.images-box {
-    display: flex;
-    gap: 15px;
-}
-.images-box img {
-    width: 50%;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.images-box img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 12px 35px rgba(0,0,0,0.6);
-    cursor: pointer;
-}
+        .images-box {
+            display: flex;
+            gap: 15px;
+        }
 
-.bibliography-box {
-    background: rgba(255, 255, 255, 0.08);
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.bibliography-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 12px 40px rgba(0,0,0,0.5);
-}
-.bibliography-box h3 {
-    font-size: 1.8rem;
-    color: #ffdd57;
-    margin-bottom: 15px;
-}
-.bibliography-box ul {
-    list-style: none;
-    padding: 0;
-}
-.bibliography-box li {
-    margin: 10px 0;
-}
-.bibliography-box a {
-    color: #ffe066;
-    text-decoration: none;
-    border-bottom: 1px solid #ffe066;
-    transition: 0.3s;
-}
-.bibliography-box a:hover {
-    color: #fff8dc;
-    border-color: #fff8dc;
-}
+        .images-box img {
+            width: 50%;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .images-box img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.6);
+            cursor: pointer;
+        }
+
+        .bibliography-box {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .bibliography-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+        }
+
+        .bibliography-box h3 {
+            font-size: 1.8rem;
+            color: #ffdd57;
+            margin-bottom: 15px;
+        }
+
+        .bibliography-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .bibliography-box li {
+            margin: 10px 0;
+        }
+
+        .bibliography-box a {
+            color: #ffe066;
+            text-decoration: none;
+            border-bottom: 1px solid #ffe066;
+            transition: 0.3s;
+        }
+
+        .bibliography-box a:hover {
+            color: #fff8dc;
+            border-color: #fff8dc;
+        }
